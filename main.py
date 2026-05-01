@@ -21,7 +21,7 @@ TMA_ID = "REDACTED-REDACTED"
 TMA_PW = "REDACTED"
 EVIDENCE_DIR = "evidence"
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/REDACTED/REDACTED"
-GAS_URL = "https://script.google.com/macros/s/AKfycbyXbPaarnD7mQa_rqm6mk-Os3XBH6C731aGxk7ecJC5U3XjtwfMkeF429rezkAo79jN/exec"
+GAS_URL = "https://script.google.com/macros/s/AKfycbyhvDaXPbZQWkhGDbt2XkUZhwe2-xprpC9U_6s3JuPeXoD2fxAGsVXePvZasId5I1zUyQ/exec"
 
 # ==========================================
 # 例外設定（位置指定: 0始まり）
