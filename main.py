@@ -17,11 +17,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 # 設定エリア
 # ==========================================
 DEFAULT_LOGIN_URL = "https://dailycheck.tc-extsys.jp/tcrappsweb/web/login/tawLogin.html"
-TMA_ID = "0030-927583"
-TMA_PW = "Ccj-322222"
+TMA_ID = "0030-928091"
+TMA_PW = "Ccj-922222"
 EVIDENCE_DIR = "evidence"
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1474006170057441300/Emo5Ooe48jBUzMhzLrCBn85_3Td-ck3jYtXtVa2vdXWWyT2HxSuKghWchrG7gCsZhEqY"
-GAS_URL = "https://script.google.com/macros/s/AKfycbyXbPaarnD7mQa_rqm6mk-Os3XBH6C731aGxk7ecJC5U3XjtwfMkeF429rezkAo79jN/exec"
+GAS_URL = "https://script.google.com/macros/s/AKfycbyhvDaXPbZQWkhGDbt2XkUZhwe2-xprpC9U_6s3JuPeXoD2fxAGsVXePvZasId5I1zUyQ/exec"
 
 # ==========================================
 # 例外設定（位置指定: 0始まり）
