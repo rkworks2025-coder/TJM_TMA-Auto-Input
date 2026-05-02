@@ -20,7 +20,7 @@ DEFAULT_LOGIN_URL = "https://dailycheck.tc-extsys.jp/tcrappsweb/web/login/tawLog
 TMA_ID = "0030-928091"
 TMA_PW = "Ccj-922222"
 EVIDENCE_DIR = "evidence"
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1474006170057441300/Emo5Ooe48jBUzMhzLrCBn85_3Td-ck3jYtXtVa2vdXWWyT2HxSuKghWchrG7gCsZhEqY"
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1500164902680264795/87eD610kNASHHzL9rWYawkTalF7eREWHRNO9s2EdKX12eqIrGT2YbwcWSi8xTFMmq9H8"
 GAS_URL = "https://script.google.com/macros/s/AKfycbyhvDaXPbZQWkhGDbt2XkUZhwe2-xprpC9U_6s3JuPeXoD2fxAGsVXePvZasId5I1zUyQ/exec"
 
 # ==========================================
@@ -297,16 +297,16 @@ def main():
         with urllib.request.urlopen(req) as res:
             gas_res = json.loads(res.read().decode('utf-8'))
     except Exception as e:
-        send_discord_notification(f"[{plate}] GASからのデータ取得に失敗しました: {e}")
+        send_discord_notification(f"<@1474004343207366839> [{plate}] GASからのデータ取得に失敗しました: {e}")
         sys.exit(1)
 
     if not gas_res.get("ok"):
         err_msg = gas_res.get("error", "Unknown error")
         print(f"GAS Error: {err_msg}")
         if err_msg == "no_recent_tire_data":
-            send_discord_notification(f"[{plate}] 24時間以内のタイヤ点検データが存在しないため、自動入力を中止しました。")
+            send_discord_notification(f"<@1474004343207366839> [{plate}] 24時間以内のタイヤ点検データが存在しないため、自動入力を中止しました。")
         else:
-            send_discord_notification(f"[{plate}] GASエラーのため自動入力を中止しました: {err_msg}")
+            send_discord_notification(f"<@1474004343207366839> [{plate}] GASエラーのため自動入力を中止しました: {err_msg}")
         sys.exit(1)
 
     tire_data = gas_res.get("tire_data", {})
@@ -472,13 +472,13 @@ def main():
         wait_for_return_page(driver)
 
         print("\n=== SUCCESS: 全工程完了 ===")
-        send_discord_notification(f"[{plate}] TMAへの入力が完了しました")
+        send_discord_notification(f"<@1474004343207366839> [{plate}] TMAへの入力が完了しました")
         sys.exit(0)
 
     except Exception as e:
         print(f"\n[!!!] CRITICAL ERROR [!!!]\n{e}")
         take_screenshot(driver, "FATAL_ERROR")
-        send_discord_notification(f"[{plate}] エラーにより入力が完了しませんでした: {e}")
+        send_discord_notification(f"<@1474004343207366839> [{plate}] エラーにより入力が完了しませんでした: {e}")
         sys.exit(1)
     finally:
         driver.quit()
