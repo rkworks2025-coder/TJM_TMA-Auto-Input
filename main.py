@@ -18,7 +18,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # ==========================================
 DEFAULT_LOGIN_URL = "https://dailycheck.tc-extsys.jp/tcrappsweb/web/login/tawLogin.html"
 TMA_ID = "0030-928091"
-TMA_PW = "Ccj-922222"
+TMA_PW = "Ccj-222229"
 EVIDENCE_DIR = "evidence"
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1500164902680264795/87eD610kNASHHzL9rWYawkTalF7eREWHRNO9s2EdKX12eqIrGT2YbwcWSi8xTFMmq9H8"
 GAS_URL = "https://script.google.com/macros/s/AKfycbyhvDaXPbZQWkhGDbt2XkUZhwe2-xprpC9U_6s3JuPeXoD2fxAGsVXePvZasId5I1zUyQ/exec"
