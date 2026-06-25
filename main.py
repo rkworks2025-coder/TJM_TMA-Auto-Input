@@ -20,7 +20,7 @@ DEFAULT_LOGIN_URL = "https://dailycheck.tc-extsys.jp/tcrappsweb/web/login/tawLog
 TMA_ID = "0030-928091"
 TMA_PW = "Ccj-222229"
 EVIDENCE_DIR = "evidence"
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1500164902680264795/87eD610kNASHHzL9rWYawkTalF7eREWHRNO9s2EdKX12eqIrGT2YbwcWSi8xTFMmq9H8"
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1519636194294501527/hO_o-TwvsSI336T-8imdtHD8nLe530mkTTsbMmGxpn7Q7DhcRGdjSNW68d4HAMVxiIv9"
 GAS_URL = "https://script.google.com/macros/s/AKfycbyhvDaXPbZQWkhGDbt2XkUZhwe2-xprpC9U_6s3JuPeXoD2fxAGsVXePvZasId5I1zUyQ/exec"
 
 # ==========================================
